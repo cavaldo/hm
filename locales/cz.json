@@ -1,0 +1,231 @@
+{
+  "seo": {
+    "title": "D&K — Audit potravin a management akcí",
+    "description": "Audity potravin, management akcí a plánování svateb s důrazem na každý detail."
+  },
+  "nav": {
+    "links": [
+      {
+        "label": "O mně",
+        "href": "#about"
+      },
+      {
+        "label": "Akce",
+        "href": "#events"
+      },
+      {
+        "label": "Reference",
+        "href": "#refs"
+      },
+      {
+        "label": "Kontakt",
+        "href": "#contact"
+      }
+    ],
+    "contact": "Ozvěte se",
+    "openMenu": "Otevřít menu",
+    "closeMenu": "Zavřít menu",
+    "language": "Jazyk"
+  },
+  "hero": {
+    "eyebrow": "Výjimečné jídlo, nezapomenutelné akce",
+    "titleBefore": "Jídlo, akce a zážitky,",
+    "titleEmphasis": "promyšleně",
+    "titleAfter": "zorganizované.",
+    "description": "Pomáhám hostitelům, restauracím a párům připravit výjimečné jídlo a hladký průběh akcí díky pečlivému plánování, poctivé kontrole kvality a spolehlivým partnerům.",
+    "primaryAction": "Naplánovat akci",
+    "secondaryAction": "Poznejte D&K",
+    "eventImageAlt": "Elegantní sál připravený pro slavnostní akci",
+    "auditImageAlt": "Tým spolupracující u společného stolu",
+    "stamp": "Každý detail prověřen.",
+    "stampSmall": "Audit · plán · realizace",
+    "auditDetailOne": "Kvalita jídla",
+    "auditDetailTwo": "Standardy obsluhy",
+    "auditDetailThree": "Každý detail"
+  },
+  "about": {
+    "photoPlaceholder": "Místo pro vaši fotografii",
+    "heading": "Klidná ruka za každým skvělým stolem.",
+    "body": "Jsem ten, kdo zkontroluje kuchyni, připraví tým a zůstane až do poslední skleničky, abyste si vy mohli užít každý okamžik. Na jedné straně standardy pohostinství, na druhé umění tvořit akce.",
+    "stats": [
+      {
+        "value": 12,
+        "label": "let v pohostinství"
+      },
+      {
+        "value": 250,
+        "label": "realizovaných akcí"
+      },
+      {
+        "value": 80,
+        "label": "auditů potravin"
+      }
+    ]
+  },
+  "services": {
+    "heading": "Co dělám",
+    "items": [
+      {
+        "title": "Audity potravin",
+        "description": "Kontrola kvality, bezpečnosti a konzistence vašeho gastronomického provozu."
+      },
+      {
+        "title": "Management akcí",
+        "description": "Kompletní plánování, produkce a koordinace pro bezchybné akce."
+      },
+      {
+        "title": "Prověření dodavatelů",
+        "description": "Spolehliví partneři, vysoké standardy, žádné kompromisy."
+      },
+      {
+        "title": "Koordinace na místě",
+        "description": "Vše probíhá hladce, abyste si mohli užít daný okamžik."
+      }
+    ]
+  },
+  "events": {
+    "heading": "Akce, které jsem pomohla uskutečnit.",
+    "items": [
+      {
+        "key": "ball",
+        "title": "Ples",
+        "description": "Elegantní večer od prvního přípitku až po poslední tanec.",
+        "attendees": "650 hostů",
+        "detail": "Galavečer · Praha",
+        "image": "/events/ball.jpg",
+        "alt": "Elegantní sál připravený pro slavnostní ples"
+      },
+      {
+        "key": "conference",
+        "title": "Konference",
+        "description": "Obsah, technologie a hosté v jednom dokonale sladěném rytmu.",
+        "attendees": "320 účastníků",
+        "detail": "2 dny · 18 řečníků",
+        "image": "/events/conference.jpg",
+        "alt": "Zaplněný konferenční sál během prezentace"
+      },
+      {
+        "key": "team-building",
+        "title": "Teambuilding",
+        "description": "Den plný výzev, spolupráce a momentů, které stmelují tým.",
+        "attendees": "85 účastníků",
+        "detail": "6 workshopů · 1 tým",
+        "image": "/events/team-building.jpg",
+        "alt": "Tým spolupracující u společného stolu"
+      },
+      {
+        "key": "festival",
+        "title": "Festival",
+        "description": "Výrazný program, živá atmosféra a hladký provoz od otevření bran.",
+        "attendees": "1 800 návštěvníků",
+        "detail": "12 umělců · 2 pódia",
+        "image": "/events/festival.jpg",
+        "alt": "Festivalový dav pod barevnými koncertními světly"
+      }
+    ]
+  },
+  "references": {
+    "heading": "Řekli o mně",
+    "items": [
+      {
+        "quote": "Profesionální, organizovaná a neuvěřitelně pečlivá. Naše akce měla opravdový úspěch.",
+        "name": "Julia Hartmann",
+        "role": "Firemní klientka"
+      },
+      {
+        "quote": "Její audit je důkladný, srozumitelný a dává nám skutečnou jistotu v našich standardech.",
+        "name": "Mark Tischer",
+        "role": "Skupina restaurací"
+      },
+      {
+        "quote": "Radost spolupracovat: klidná, vynalézavá a vždy o krok napřed.",
+        "name": "Sophie Peters",
+        "role": "Soukromá klientka"
+      },
+      {
+        "quote": "Náš svatební den proběhl bez jediného zádrhelu a všichni hosté mluvili o jídle.",
+        "name": "Anna & Tom Reiter",
+        "role": "Svatba"
+      },
+      {
+        "quote": "Teambuildingová večeře byla nejlepší, jakou kdy naše firma zažila.",
+        "name": "Lukas Novak",
+        "role": "HR manažer"
+      },
+      {
+        "quote": "Dodavatelé byli prověřeni tak dobře, že nás během večera nic nepřekvapilo.",
+        "name": "Eva Marek",
+        "role": "Organizátorka konference"
+      }
+    ]
+  },
+  "contact": {
+    "headingBefore": "Pojďme vytvořit něco",
+    "headingEmphasis": "výjimečného.",
+    "details": [
+      {
+        "label": "E-mail",
+        "value": "hello@dk-events.com"
+      },
+      {
+        "label": "Telefon",
+        "value": "+420 000 000 000"
+      },
+      {
+        "label": "Působím v",
+        "value": "Praze i po celém světě"
+      }
+    ],
+    "socials": [
+      "Instagram",
+      "LinkedIn"
+    ],
+    "name": "Jméno",
+    "email": "E-mail",
+    "lookingFor": "Mám zájem o",
+    "types": [
+      {
+        "id": "wedding",
+        "label": "Svatbu"
+      },
+      {
+        "id": "private-dining",
+        "label": "Soukromé stolování"
+      },
+      {
+        "id": "corporate-event",
+        "label": "Firemní akci"
+      },
+      {
+        "id": "team-building",
+        "label": "Teambuilding"
+      },
+      {
+        "id": "pop-up",
+        "label": "Pop-up akci"
+      },
+      {
+        "id": "food-audit",
+        "label": "Audit potravin"
+      }
+    ],
+    "eventDate": "Datum akce",
+    "guests": "Počet hostů",
+    "guestOptions": [
+      "Méně než 30",
+      "30–80",
+      "80–150",
+      "150+"
+    ],
+    "message": "Napište mi o své akci",
+    "submit": "Odeslat zprávu",
+    "sending": "Odesílání...",
+    "success": "Děkuji, odpovím vám do 24 hodin.",
+    "error": "Zprávu se nepodařilo odeslat. Zkuste to prosím znovu."
+  },
+  "footer": {
+    "tagline": "Audit potravin a management akcí",
+    "privacy": "Soukromí",
+    "terms": "Podmínky"
+  }
+}

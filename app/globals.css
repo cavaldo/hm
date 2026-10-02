@@ -1,0 +1,40 @@
+@import "tailwindcss";
+@import "react-day-picker/style.css";
+
+@theme {
+  --color-chestnut: #713105;
+  --color-sand: #d4c381;
+  --color-taupe: #c2a990;
+  --color-espresso: #2e1503;
+  --color-mahogany: #4a2008;
+  --color-cream: #f6f0e4;
+  --color-linen: #e9dcc8;
+  --color-card: #fcf9f3;
+  --color-line: #dfd0ba;
+  --color-muted: #7a5f4c;
+  --font-display: var(--font-cormorant), Georgia, serif;
+  --font-sans: var(--font-outfit), system-ui, sans-serif;
+  --animate-marquee: marquee 34s linear infinite;
+
+  @keyframes marquee {
+    to {
+      transform: translateX(-50%);
+    }
+  }
+}
+
+html {
+  scroll-padding-top: 70px;
+}
+
+:focus-visible {
+  outline: 2px solid var(--color-sand);
+  outline-offset: 3px;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  * {
+    animation: none !important;
+    transition: none !important;
+  }
+}

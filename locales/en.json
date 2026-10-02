@@ -1,0 +1,231 @@
+{
+  "seo": {
+    "title": "D&K — Food Auditor & Event Manager",
+    "description": "Food audits, event management and wedding planning, thoughtfully managed."
+  },
+  "nav": {
+    "links": [
+      {
+        "label": "About",
+        "href": "#about"
+      },
+      {
+        "label": "Events",
+        "href": "#events"
+      },
+      {
+        "label": "References",
+        "href": "#refs"
+      },
+      {
+        "label": "Contact",
+        "href": "#contact"
+      }
+    ],
+    "contact": "Get in touch",
+    "openMenu": "Open menu",
+    "closeMenu": "Close menu",
+    "language": "Language"
+  },
+  "hero": {
+    "eyebrow": "Exceptional food, unforgettable events",
+    "titleBefore": "Food, events & experiences,",
+    "titleEmphasis": "thoughtfully",
+    "titleAfter": "managed.",
+    "description": "I help hosts, restaurants and couples deliver exceptional food and seamless events, through careful planning, honest quality checks and trusted partners.",
+    "primaryAction": "Plan your event",
+    "secondaryAction": "Meet D&K",
+    "eventImageAlt": "An elegant ballroom prepared for a formal event",
+    "auditImageAlt": "A team collaborating around a table",
+    "stamp": "Every detail, checked.",
+    "stampSmall": "Audit · plan · deliver",
+    "auditDetailOne": "Food quality",
+    "auditDetailTwo": "Service standards",
+    "auditDetailThree": "Every detail"
+  },
+  "about": {
+    "photoPlaceholder": "Your photo here",
+    "heading": "A calm hand behind every great table.",
+    "body": "I'm the person who checks the kitchen, briefs the team and stays until the last glass is cleared, so you can enjoy the moment. Hospitality standards on one side, event craft on the other.",
+    "stats": [
+      {
+        "value": 12,
+        "label": "years in hospitality"
+      },
+      {
+        "value": 250,
+        "label": "events delivered"
+      },
+      {
+        "value": 80,
+        "label": "food audits"
+      }
+    ]
+  },
+  "services": {
+    "heading": "What I do",
+    "items": [
+      {
+        "title": "Food audits",
+        "description": "Quality, safety and consistency checks for your dining experience."
+      },
+      {
+        "title": "Event management",
+        "description": "End-to-end planning, production and coordination for flawless events."
+      },
+      {
+        "title": "Vendor checks",
+        "description": "Reliable partners, high standards, no compromises."
+      },
+      {
+        "title": "On-site coordination",
+        "description": "Everything runs smoothly, so you can enjoy the moment."
+      }
+    ]
+  },
+  "events": {
+    "heading": "The events I made happen.",
+    "items": [
+      {
+        "key": "ball",
+        "title": "Ball",
+        "description": "An elegant evening from the first toast to the final dance.",
+        "attendees": "650 guests",
+        "detail": "Gala evening · Prague",
+        "image": "/events/ball.jpg",
+        "alt": "An elegant hall set for a formal ball"
+      },
+      {
+        "key": "conference",
+        "title": "Conference",
+        "description": "Content, technology and guests moving in one seamless rhythm.",
+        "attendees": "320 attendees",
+        "detail": "2 days · 18 speakers",
+        "image": "/events/conference.jpg",
+        "alt": "A full conference hall during a presentation"
+      },
+      {
+        "key": "team-building",
+        "title": "Team building",
+        "description": "A day of challenges, collaboration and moments that bring a team closer.",
+        "attendees": "85 attendees",
+        "detail": "6 workshops · 1 team",
+        "image": "/events/team-building.jpg",
+        "alt": "A team collaborating around a shared table"
+      },
+      {
+        "key": "festival",
+        "title": "Festival",
+        "description": "A bold programme, live atmosphere and smooth operations from gates open.",
+        "attendees": "1,800 visitors",
+        "detail": "12 performers · 2 stages",
+        "image": "/events/festival.jpg",
+        "alt": "A festival crowd beneath colourful concert lights"
+      }
+    ]
+  },
+  "references": {
+    "heading": "Kind words",
+    "items": [
+      {
+        "quote": "Professional, organized and incredibly detail-oriented. Our event was a true success.",
+        "name": "Julia Hartmann",
+        "role": "Corporate client"
+      },
+      {
+        "quote": "Her food audit is thorough, clear and gives us real confidence in our standards.",
+        "name": "Mark Tischer",
+        "role": "Restaurant group"
+      },
+      {
+        "quote": "A pleasure to work with: calm, resourceful and always one step ahead.",
+        "name": "Sophie Peters",
+        "role": "Private client"
+      },
+      {
+        "quote": "Our wedding day ran without a hitch and every guest talked about the food.",
+        "name": "Anna & Tom Reiter",
+        "role": "Wedding"
+      },
+      {
+        "quote": "The team building dinner was the best our company has ever had.",
+        "name": "Lukas Novak",
+        "role": "HR manager"
+      },
+      {
+        "quote": "Vendors were vetted so well that we had zero surprises on the night.",
+        "name": "Eva Marek",
+        "role": "Conference organizer"
+      }
+    ]
+  },
+  "contact": {
+    "headingBefore": "Let's create something",
+    "headingEmphasis": "exceptional.",
+    "details": [
+      {
+        "label": "Email",
+        "value": "hello@dk-events.com"
+      },
+      {
+        "label": "Phone",
+        "value": "+420 000 000 000"
+      },
+      {
+        "label": "Based in",
+        "value": "Prague, working worldwide"
+      }
+    ],
+    "socials": [
+      "Instagram",
+      "LinkedIn"
+    ],
+    "name": "Name",
+    "email": "Email",
+    "lookingFor": "I'm looking for",
+    "types": [
+      {
+        "id": "wedding",
+        "label": "Wedding"
+      },
+      {
+        "id": "private-dining",
+        "label": "Private dining"
+      },
+      {
+        "id": "corporate-event",
+        "label": "Corporate event"
+      },
+      {
+        "id": "team-building",
+        "label": "Team building"
+      },
+      {
+        "id": "pop-up",
+        "label": "Pop-up"
+      },
+      {
+        "id": "food-audit",
+        "label": "Food audit"
+      }
+    ],
+    "eventDate": "Event date",
+    "guests": "Guests",
+    "guestOptions": [
+      "Under 30",
+      "30–80",
+      "80–150",
+      "150+"
+    ],
+    "message": "Tell me about your event",
+    "submit": "Send message",
+    "sending": "Sending...",
+    "success": "Thank you, I'll reply within 24 hours.",
+    "error": "Your message could not be sent. Please try again."
+  },
+  "footer": {
+    "tagline": "Food auditor & event manager",
+    "privacy": "Privacy",
+    "terms": "Terms"
+  }
+}
