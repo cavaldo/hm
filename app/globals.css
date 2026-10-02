@@ -14,7 +14,15 @@
   --color-muted: #7a5f4c;
   --font-display: var(--font-cormorant), Georgia, serif;
   --font-sans: var(--font-outfit), system-ui, sans-serif;
+  --animate-spin-slow: spin 18s linear infinite;
+  --animate-float: float 7s ease-in-out infinite;
   --animate-marquee: marquee 34s linear infinite;
+
+  @keyframes float {
+    50% {
+      translate: -50% -53%;
+    }
+  }
 
   @keyframes marquee {
     to {

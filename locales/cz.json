@@ -35,13 +35,9 @@
     "description": "Pomáhám hostitelům, restauracím a párům připravit výjimečné jídlo a hladký průběh akcí díky pečlivému plánování, poctivé kontrole kvality a spolehlivým partnerům.",
     "primaryAction": "Naplánovat akci",
     "secondaryAction": "Poznejte D&K",
-    "eventImageAlt": "Elegantní sál připravený pro slavnostní akci",
-    "auditImageAlt": "Tým spolupracující u společného stolu",
+    "ring": "AUDITY · AKCE · SVATBY ·",
     "stamp": "Každý detail prověřen.",
-    "stampSmall": "Audit · plán · realizace",
-    "auditDetailOne": "Kvalita jídla",
-    "auditDetailTwo": "Standardy obsluhy",
-    "auditDetailThree": "Každý detail"
+    "stampSmall": "Audit · plán · realizace"
   },
   "about": {
     "photoPlaceholder": "Místo pro vaši fotografii",

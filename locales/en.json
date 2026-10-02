@@ -35,13 +35,9 @@
     "description": "I help hosts, restaurants and couples deliver exceptional food and seamless events, through careful planning, honest quality checks and trusted partners.",
     "primaryAction": "Plan your event",
     "secondaryAction": "Meet D&K",
-    "eventImageAlt": "An elegant ballroom prepared for a formal event",
-    "auditImageAlt": "A team collaborating around a table",
-    "stamp": "Every detail, checked.",
-    "stampSmall": "Audit · plan · deliver",
-    "auditDetailOne": "Food quality",
-    "auditDetailTwo": "Service standards",
-    "auditDetailThree": "Every detail"
+    "ring": "FOOD AUDITS · EVENTS · WEDDINGS ·",
+    "stamp": "Every detail, tasted.",
+    "stampSmall": "Audit · plan · deliver"
   },
   "about": {
     "photoPlaceholder": "Your photo here",
