@@ -9,11 +9,10 @@ const palettes = [
   { value: "amber-oxblood", label: "Amber" },
   { value: "navy-gold", label: "Navy" },
   { value: "slate-teal", label: "Slate teal" },
-  { value: "olive-burgundy", label: "Olive" },
   { value: "monochrome", label: "Monochrome" },
   { value: "sunset-amber", label: "Sunset amber" },
   { value: "honey-wheat", label: "Honey wheat" },
-  { value: "olive-harvest", label: "Olive harvest" },
+  { value: "sage-honey", label: "Sage honey" },
 ] as const;
 
 type Palette = (typeof palettes)[number]["value"];
@@ -37,6 +36,9 @@ export default function Nav({
       const migratedPalette =
         savedPalette === "berry-rose"
           ? "slate-teal"
+          : savedPalette === "olive-burgundy" ||
+              savedPalette === "olive-harvest"
+            ? "sage-honey"
           : savedPalette === "simple"
             ? "original"
             : savedPalette;

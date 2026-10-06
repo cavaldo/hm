@@ -11,9 +11,9 @@ export default function Services({ text }: { text: Dictionary["services"] }) {
     <section className="pb-16 md:pb-24">
       <div className="mx-auto max-w-[1160px] px-6">
         <h2 className="mb-7 font-display text-[clamp(38px,5vw,60px)] leading-[1.05] text-espresso">{text.heading}</h2>
-        <div className="grid grid-cols-2 gap-4 lg:grid-cols-4">
+        <div className="flex flex-wrap justify-center gap-4">
           {text.items.map(({ title, description }, index) => (
-            <div key={title} className="rounded-[18px] border border-champagne bg-sand p-5 md:p-6">
+            <div key={title} className="w-64 shrink-0 rounded-[18px] border border-champagne bg-sand p-5 md:p-6">
               <span className="mb-4 grid size-[50px] place-items-center rounded-full bg-signature-yolk">
                 <svg viewBox="0 0 24 24" className="size-6 fill-none stroke-espresso" strokeWidth={1.7} strokeLinecap="round" strokeLinejoin="round">{icons[index]}</svg>
               </span>

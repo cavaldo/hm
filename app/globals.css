@@ -78,18 +78,6 @@ html {
   --color-ink-brown: #1a2928;
 }
 
-:root[data-palette="olive-burgundy"] {
-  --color-yolk: #c49b45;
-  --color-espresso: #372713;
-  --color-chocolate: #4d4828;
-  --color-cognac: #5c0203;
-  --color-antique-gold: #a39670;
-  --color-champagne: #d9c4b1;
-  --color-ivory: #f4ecdf;
-  --color-sand: #e1d3c0;
-  --color-ink-brown: #24190f;
-}
-
 :root[data-palette="monochrome"] {
   --color-yolk: #929292;
   --color-espresso: #171717;
@@ -128,16 +116,16 @@ html {
   --color-ink-brown: #3d230a;
 }
 
-:root[data-palette="olive-harvest"] {
-  --color-yolk: #bf8414;
-  --color-espresso: #3b1e03;
-  --color-chocolate: #4b3213;
-  --color-cognac: #7c8149;
-  --color-antique-gold: #9e6e12;
-  --color-champagne: #f3dc99;
-  --color-ivory: #e1d5bf;
-  --color-sand: #d6c6a9;
-  --color-ink-brown: #3b1e03;
+:root[data-palette="sage-honey"] {
+  --color-yolk: #f4b840;
+  --color-espresso: #4f583b;
+  --color-chocolate: #414832;
+  --color-cognac: #69724a;
+  --color-antique-gold: #94712e;
+  --color-champagne: #ead7b2;
+  --color-ivory: #f8f4e8;
+  --color-sand: #ead7b2;
+  --color-ink-brown: #343b28;
 }
 
 @media (prefers-reduced-motion: reduce) {
