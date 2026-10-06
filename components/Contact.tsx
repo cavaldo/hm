@@ -20,7 +20,7 @@ import { Textarea } from "@/components/ui/textarea";
 
 type SubmissionStatus = "idle" | "submitting" | "success" | "error";
 
-const labelClass = "mb-1.5 block text-[13px] text-sand";
+const labelClass = "mb-1.5 block text-[13px] text-champagne";
 
 export default function Contact({
   text,
@@ -75,18 +75,18 @@ export default function Contact({
   return (
     <section
       id="contact"
-      className="bg-gradient-to-br from-mahogany to-espresso py-16 text-cream md:py-24"
+      className="bg-espresso py-16 text-ivory md:py-24"
     >
       <div className="mx-auto grid max-w-[1160px] gap-12 px-6 lg:grid-cols-[.85fr_1.15fr] lg:gap-16">
         <div>
           <h2 className="font-display text-[clamp(44px,6vw,80px)] leading-[1.02]">
             {text.headingBefore}{" "}
-            <em className="text-sand">{text.headingEmphasis}</em>
+            <em className="text-yolk">{text.headingEmphasis}</em>
           </h2>
           <div className="my-8 grid gap-3.5">
             {text.details.map(({ label, value }) => (
               <div key={label}>
-                <span className="block text-[13px] text-sand">{label}</span>
+                <span className="block text-[13px] text-champagne">{label}</span>
                 {value}
               </div>
             ))}
@@ -99,7 +99,7 @@ export default function Contact({
                   href="#"
                   aria-label={social}
                   title={social}
-                  className="grid size-11 place-items-center text-sand transition hover:text-cream"
+                  className="grid size-11 place-items-center text-champagne transition hover:text-cognac"
                 >
                   {social === "Instagram" ? (
                     <svg
@@ -143,13 +143,19 @@ export default function Contact({
         </div>
         <form
           onSubmit={submit}
-          className="grid content-start gap-4 rounded-3xl border border-sand/25 bg-card/5 p-6 sm:grid-cols-2 sm:p-9"
+          className="grid content-start gap-4 rounded-3xl border border-champagne/30 bg-chocolate p-6 sm:grid-cols-2 sm:p-9"
         >
           <div>
             <label className={labelClass} htmlFor="name">
               {text.name}
             </label>
-            <Input id="name" name="name" autoComplete="name" required />
+            <Input
+              id="name"
+              name="name"
+              autoComplete="name"
+              required
+              className="border-champagne/40 bg-chocolate text-ivory placeholder:text-champagne focus-visible:border-cognac focus-visible:ring-cognac"
+            />
           </div>
           <div>
             <label className={labelClass} htmlFor="email">
@@ -161,6 +167,7 @@ export default function Contact({
               type="email"
               autoComplete="email"
               required
+              className="border-champagne/40 bg-chocolate text-ivory placeholder:text-champagne focus-visible:border-cognac focus-visible:ring-cognac"
             />
           </div>
           <fieldset className="sm:col-span-2">
@@ -171,10 +178,15 @@ export default function Contact({
                 return (
                   <Button
                     type="button"
-                    variant={active ? "default" : "outline"}
+                    variant="outline"
                     size="sm"
                     key={id}
                     aria-pressed={active}
+                    className={
+                      active
+                        ? "border-cognac bg-chocolate text-ivory hover:bg-chocolate focus-visible:ring-cognac"
+                        : "border-champagne/50 bg-chocolate text-ivory hover:bg-chocolate focus-visible:ring-cognac"
+                    }
                     onClick={() =>
                       setPicked((current) =>
                         active
@@ -201,18 +213,18 @@ export default function Contact({
                   variant="outline"
                   aria-label={text.eventDate}
                   aria-expanded={datePickerOpen}
-                  className="h-11 w-full justify-between border-sand/30 bg-black/20 px-3.5 text-left text-[15px] font-normal hover:bg-black/20"
+                  className="h-11 w-full justify-between border-champagne/40 bg-chocolate px-3.5 text-left text-[15px] font-normal text-ivory hover:bg-cognac/30 focus-visible:ring-cognac"
                 >
                   <span
                     className={
-                      eventDate ? "text-cream" : "text-cream/55"
+                      eventDate ? "text-ivory" : "text-champagne"
                     }
                   >
                     {eventDate
                       ? format(eventDate, "PPP", { locale: calendarLocale })
                       : text.eventDate}
                   </span>
-                  <CalendarDays className="size-4 shrink-0 opacity-70" />
+                  <CalendarDays className="size-4 shrink-0 text-champagne" />
                 </Button>
               </PopoverTrigger>
               <PopoverContent align="start" className="w-auto">
@@ -233,7 +245,10 @@ export default function Contact({
               {text.guests}
             </label>
             <Select value={guests} onValueChange={setGuests} name="guests">
-              <SelectTrigger id="guests">
+              <SelectTrigger
+                id="guests"
+                className="border-champagne/40 bg-chocolate text-ivory focus:ring-cognac"
+              >
                 <SelectValue />
               </SelectTrigger>
               <SelectContent>
@@ -254,7 +269,7 @@ export default function Contact({
               name="message"
               autoComplete="off"
               required
-              className="min-h-[190px] resize-y"
+              className="min-h-[190px] resize-y border-champagne/40 bg-chocolate text-ivory placeholder:text-champagne focus-visible:border-cognac focus-visible:ring-cognac"
             />
           </div>
           <div className="flex flex-wrap items-center gap-4 sm:col-span-2">
@@ -267,14 +282,14 @@ export default function Contact({
             </Button>
             {status === "success" && (
               <span
-                className="font-display text-[22px] italic text-sand"
+                className="font-display text-[22px] italic text-champagne"
                 role="status"
               >
                 {text.success}
               </span>
             )}
             {status === "error" && (
-              <span className="text-sm text-cream" role="alert">
+              <span className="text-sm text-ivory" role="alert">
                 {text.error}
               </span>
             )}

@@ -15,8 +15,8 @@ export default function Counter({ to, label }: { to: number; label: string }) {
   }, [to]);
   return (
     <div ref={ref}>
-      <b className="block font-display text-4xl font-medium leading-none text-chestnut md:text-5xl">{n}+</b>
-      <small className="text-sm text-muted">{label}</small>
+      <b className="block font-display text-4xl font-medium leading-none text-espresso md:text-5xl">{n}+</b>
+      <small className="text-sm text-ink-brown/70">{label}</small>
     </div>
   );
 }

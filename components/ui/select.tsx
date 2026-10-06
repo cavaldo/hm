@@ -25,7 +25,7 @@ function SelectTrigger({
   return (
     <SelectPrimitive.Trigger
       className={cn(
-        "flex h-11 w-full items-center justify-between rounded-md border border-sand/30 bg-black/20 px-3.5 py-2 text-[15px] text-cream shadow-sm transition-colors focus:outline-none focus:ring-1 focus:ring-sand disabled:cursor-not-allowed disabled:opacity-50 [&>span]:truncate",
+        "flex h-11 w-full items-center justify-between rounded-md border border-champagne bg-ivory px-3.5 py-2 text-[15px] text-ink-brown shadow-sm transition-colors focus:outline-none focus:ring-1 focus:ring-antique-gold disabled:cursor-not-allowed disabled:opacity-50 [&>span]:truncate",
         className,
       )}
       {...props}
@@ -49,7 +49,7 @@ function SelectContent({
       <SelectPrimitive.Content
         position={position}
         className={cn(
-          "relative z-50 max-h-96 min-w-32 overflow-hidden rounded-md border border-sand/25 bg-espresso text-cream shadow-md data-[state=open]:animate-in data-[state=closed]:animate-out data-[state=closed]:fade-out-0 data-[state=open]:fade-in-0",
+          "relative z-50 max-h-96 min-w-32 overflow-hidden rounded-md border border-champagne bg-chocolate text-ivory shadow-md data-[state=open]:animate-in data-[state=closed]:animate-out data-[state=closed]:fade-out-0 data-[state=open]:fade-in-0",
           className,
         )}
         {...props}
@@ -88,7 +88,7 @@ function SelectItem({
   return (
     <SelectPrimitive.Item
       className={cn(
-        "relative flex w-full cursor-default select-none items-center rounded-sm py-1.5 pl-2 pr-8 text-sm outline-none focus:bg-sand/15 focus:text-cream data-[disabled]:pointer-events-none data-[disabled]:opacity-50",
+        "relative flex w-full cursor-default select-none items-center rounded-sm py-1.5 pl-2 pr-8 text-sm outline-none focus:bg-cognac/30 focus:text-ivory data-[disabled]:pointer-events-none data-[disabled]:opacity-50",
         className,
       )}
       {...props}
@@ -109,7 +109,7 @@ function SelectSeparator({
 }: ComponentProps<typeof SelectPrimitive.Separator>) {
   return (
     <SelectPrimitive.Separator
-      className={cn("-mx-1 my-1 h-px bg-sand/20", className)}
+      className={cn("-mx-1 my-1 h-px bg-champagne/30", className)}
       {...props}
     />
   );

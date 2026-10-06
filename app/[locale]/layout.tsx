@@ -60,7 +60,7 @@ export default async function LocaleLayout({
       lang={locale}
       className={`${display.variable} ${sans.variable} scroll-smooth`}
     >
-      <body className="bg-cream font-sans text-[17px] font-light leading-relaxed text-espresso antialiased">
+      <body className="bg-ivory font-sans text-[17px] font-light leading-relaxed text-ink-brown antialiased">
         {children}
       </body>
     </html>
