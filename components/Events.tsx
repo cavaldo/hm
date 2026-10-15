@@ -8,7 +8,7 @@ export default function Events({ text }: { text: Dictionary["events"] }) {
   const [openEvent, setOpenEvent] = useState<string | null>(null);
 
   return (
-    <section id="events" className="bg-sand py-16 text-ink-brown md:py-24">
+    <section id="events" className="bg-sand py-8 text-ink-brown md:py-16">
       <div className="mx-auto max-w-[1160px] px-6">
         <h2 className="max-w-[16ch] font-display text-[clamp(44px,6vw,72px)] leading-[0.98] text-espresso">
           {text.heading}

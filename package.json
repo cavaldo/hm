@@ -2,14 +2,20 @@
   "name": "dk-site",
   "version": "1.0.0",
   "private": true,
+  "engines": {
+    "node": ">=20.19 <22 || >=22.12"
+  },
   "scripts": {
     "dev": "next dev",
     "build": "next build",
-    "start": "next start"
+    "start": "next start",
+    "sanity:deploy": "sanity deploy",
+    "sanity:import": "node --env-file=.env.local scripts/import-sanity-content.mjs"
   },
   "dependencies": {
     "@radix-ui/react-popover": "^1.1.23",
     "@radix-ui/react-select": "^2.3.7",
+    "@sanity/client": "^7.26.2",
     "class-variance-authority": "^0.7.1",
     "clsx": "^2.1.1",
     "date-fns": "^4.4.0",
@@ -18,6 +24,8 @@
     "react": "^19.0.0",
     "react-day-picker": "^10.0.2",
     "react-dom": "^19.0.0",
+    "sanity": "^5.14.1",
+    "styled-components": "^6.6.0",
     "tailwind-merge": "^3.7.0"
   },
   "devDependencies": {

@@ -8,7 +8,11 @@ import type { Dictionary, Locale } from "@/lib/dictionaries";
 import { Button } from "@/components/ui/button";
 import { Calendar } from "@/components/ui/calendar";
 import { Input } from "@/components/ui/input";
-import { Popover, PopoverContent, PopoverTrigger } from "@/components/ui/popover";
+import {
+  Popover,
+  PopoverContent,
+  PopoverTrigger,
+} from "@/components/ui/popover";
 import {
   Select,
   SelectContent,
@@ -56,7 +60,9 @@ export default function Contact({
       });
 
       if (!response.ok) {
-        throw new Error(`Contact request failed with status ${response.status}`);
+        throw new Error(
+          `Contact request failed with status ${response.status}`,
+        );
       }
 
       form.reset();
@@ -73,10 +79,7 @@ export default function Contact({
   const calendarLocale = locale === "cs" ? cs : enGB;
 
   return (
-    <section
-      id="contact"
-      className="bg-espresso py-16 text-ivory md:py-24"
-    >
+    <section id="contact" className="bg-espresso py-8 text-ivory md:py-16">
       <div className="mx-auto grid max-w-[1160px] gap-12 px-6 lg:grid-cols-[.85fr_1.15fr] lg:gap-16">
         <div>
           <h2 className="font-display text-[clamp(44px,6vw,80px)] leading-[1.02]">
@@ -86,7 +89,9 @@ export default function Contact({
           <div className="my-8 grid gap-3.5">
             {text.details.map(({ label, value }) => (
               <div key={label}>
-                <span className="block text-[13px] text-champagne">{label}</span>
+                <span className="block text-[13px] text-champagne">
+                  {label}
+                </span>
                 {value}
               </div>
             ))}
@@ -184,7 +189,7 @@ export default function Contact({
                     aria-pressed={active}
                     className={
                       active
-                        ? "border-cognac bg-chocolate text-ivory hover:bg-chocolate focus-visible:ring-cognac"
+                        ? "border-yolk bg-yolk text-espresso hover:bg-yolk focus-visible:ring-yolk"
                         : "border-champagne/50 bg-chocolate text-ivory hover:bg-chocolate focus-visible:ring-cognac"
                     }
                     onClick={() =>
@@ -215,11 +220,7 @@ export default function Contact({
                   aria-expanded={datePickerOpen}
                   className="h-11 w-full justify-between border-champagne/40 bg-chocolate px-3.5 text-left text-[15px] font-normal text-ivory hover:bg-cognac/30 focus-visible:ring-cognac"
                 >
-                  <span
-                    className={
-                      eventDate ? "text-ivory" : "text-champagne"
-                    }
-                  >
+                  <span className={eventDate ? "text-ivory" : "text-champagne"}>
                     {eventDate
                       ? format(eventDate, "PPP", { locale: calendarLocale })
                       : text.eventDate}

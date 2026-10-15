@@ -1,0 +1,572 @@
+[
+  {
+    "fields": [
+      {
+        "options": {
+          "list": [
+            {
+              "title": "English",
+              "value": "en"
+            },
+            {
+              "title": "Čeština",
+              "value": "cs"
+            }
+          ]
+        },
+        "validation": [
+          {
+            "level": "error",
+            "rules": [
+              {
+                "flag": "valid",
+                "constraint": [
+                  "en",
+                  "cs"
+                ]
+              },
+              {
+                "flag": "presence",
+                "constraint": "required"
+              }
+            ]
+          }
+        ],
+        "name": "locale",
+        "type": "string",
+        "title": "Language"
+      },
+      {
+        "fields": [
+          {
+            "name": "seo",
+            "type": "siteSeo",
+            "title": "SEO"
+          },
+          {
+            "name": "nav",
+            "type": "siteNav",
+            "title": "Navigation"
+          },
+          {
+            "name": "hero",
+            "type": "siteHero"
+          },
+          {
+            "name": "about",
+            "type": "siteAbout"
+          },
+          {
+            "name": "services",
+            "type": "siteServices"
+          },
+          {
+            "name": "events",
+            "type": "siteEvents"
+          },
+          {
+            "name": "references",
+            "type": "siteReferences"
+          },
+          {
+            "name": "contact",
+            "type": "siteContact"
+          },
+          {
+            "name": "footer",
+            "type": "siteFooter"
+          }
+        ],
+        "name": "content",
+        "type": "object",
+        "title": "Page content"
+      }
+    ],
+    "name": "siteContent",
+    "type": "document",
+    "title": "Website content"
+  },
+  {
+    "fields": [
+      {
+        "name": "title",
+        "type": "string",
+        "title": "Page title"
+      },
+      {
+        "rows": 3,
+        "name": "description",
+        "type": "text",
+        "title": "Page description"
+      }
+    ],
+    "name": "siteSeo",
+    "type": "object",
+    "title": "SEO"
+  },
+  {
+    "fields": [
+      {
+        "name": "label",
+        "type": "string"
+      },
+      {
+        "name": "href",
+        "type": "string",
+        "title": "Link"
+      }
+    ],
+    "name": "siteNavLink",
+    "type": "object",
+    "title": "Navigation link"
+  },
+  {
+    "fields": [
+      {
+        "of": [
+          {
+            "type": "siteNavLink",
+            "title": "Navigation link"
+          }
+        ],
+        "name": "links",
+        "type": "array"
+      },
+      {
+        "name": "contact",
+        "type": "string",
+        "title": "Contact button"
+      },
+      {
+        "name": "openMenu",
+        "type": "string",
+        "title": "Open menu label"
+      },
+      {
+        "name": "closeMenu",
+        "type": "string",
+        "title": "Close menu label"
+      },
+      {
+        "name": "language",
+        "type": "string",
+        "title": "Language label"
+      },
+      {
+        "name": "palette",
+        "type": "string",
+        "title": "Color palette label"
+      }
+    ],
+    "name": "siteNav",
+    "type": "object",
+    "title": "Navigation"
+  },
+  {
+    "fields": [
+      {
+        "name": "eyebrow",
+        "type": "string"
+      },
+      {
+        "name": "titleBefore",
+        "type": "string",
+        "title": "Title before emphasis"
+      },
+      {
+        "name": "titleEmphasis",
+        "type": "string",
+        "title": "Emphasized title"
+      },
+      {
+        "name": "titleAfter",
+        "type": "string",
+        "title": "Title after emphasis"
+      },
+      {
+        "rows": 4,
+        "name": "description",
+        "type": "text"
+      },
+      {
+        "name": "primaryAction",
+        "type": "string",
+        "title": "Primary button"
+      },
+      {
+        "name": "secondaryAction",
+        "type": "string",
+        "title": "Secondary button"
+      },
+      {
+        "name": "ring",
+        "type": "string",
+        "title": "Circular text"
+      },
+      {
+        "name": "stamp",
+        "type": "string",
+        "title": "Stamp title"
+      },
+      {
+        "name": "stampSmall",
+        "type": "string",
+        "title": "Stamp subtitle"
+      }
+    ],
+    "name": "siteHero",
+    "type": "object",
+    "title": "Hero"
+  },
+  {
+    "fields": [
+      {
+        "name": "value",
+        "type": "number"
+      },
+      {
+        "name": "label",
+        "type": "string"
+      }
+    ],
+    "name": "siteStat",
+    "type": "object",
+    "title": "Statistic"
+  },
+  {
+    "fields": [
+      {
+        "name": "photoAlt",
+        "type": "string",
+        "title": "Photo description"
+      },
+      {
+        "name": "heading",
+        "type": "string"
+      },
+      {
+        "rows": 5,
+        "name": "body",
+        "type": "text",
+        "title": "Text"
+      },
+      {
+        "of": [
+          {
+            "type": "siteStat",
+            "title": "Statistic"
+          }
+        ],
+        "name": "stats",
+        "type": "array",
+        "title": "Statistics"
+      }
+    ],
+    "name": "siteAbout",
+    "type": "object",
+    "title": "About"
+  },
+  {
+    "fields": [
+      {
+        "name": "title",
+        "type": "string"
+      },
+      {
+        "rows": 3,
+        "name": "description",
+        "type": "text"
+      }
+    ],
+    "name": "siteService",
+    "type": "object",
+    "title": "Service"
+  },
+  {
+    "fields": [
+      {
+        "name": "heading",
+        "type": "string"
+      },
+      {
+        "of": [
+          {
+            "type": "siteService",
+            "title": "Service"
+          }
+        ],
+        "name": "items",
+        "type": "array",
+        "title": "Services"
+      }
+    ],
+    "name": "siteServices",
+    "type": "object",
+    "title": "Services"
+  },
+  {
+    "fields": [
+      {
+        "name": "key",
+        "type": "string",
+        "title": "Internal key"
+      },
+      {
+        "name": "title",
+        "type": "string"
+      },
+      {
+        "rows": 3,
+        "name": "description",
+        "type": "text"
+      },
+      {
+        "name": "attendees",
+        "type": "string"
+      },
+      {
+        "name": "detail",
+        "type": "string",
+        "title": "Event detail"
+      },
+      {
+        "name": "image",
+        "type": "string",
+        "title": "Image path"
+      },
+      {
+        "name": "alt",
+        "type": "string",
+        "title": "Image description"
+      }
+    ],
+    "name": "siteEvent",
+    "type": "object",
+    "title": "Event"
+  },
+  {
+    "fields": [
+      {
+        "name": "heading",
+        "type": "string"
+      },
+      {
+        "of": [
+          {
+            "type": "siteEvent",
+            "title": "Event"
+          }
+        ],
+        "name": "items",
+        "type": "array",
+        "title": "Events"
+      }
+    ],
+    "name": "siteEvents",
+    "type": "object",
+    "title": "Events"
+  },
+  {
+    "fields": [
+      {
+        "rows": 4,
+        "name": "quote",
+        "type": "text"
+      },
+      {
+        "name": "name",
+        "type": "string"
+      },
+      {
+        "name": "role",
+        "type": "string"
+      }
+    ],
+    "name": "siteReference",
+    "type": "object",
+    "title": "Reference"
+  },
+  {
+    "fields": [
+      {
+        "name": "heading",
+        "type": "string"
+      },
+      {
+        "of": [
+          {
+            "type": "siteReference",
+            "title": "Reference"
+          }
+        ],
+        "name": "items",
+        "type": "array",
+        "title": "References"
+      }
+    ],
+    "name": "siteReferences",
+    "type": "object",
+    "title": "References"
+  },
+  {
+    "fields": [
+      {
+        "name": "label",
+        "type": "string"
+      },
+      {
+        "name": "value",
+        "type": "string"
+      }
+    ],
+    "name": "siteContactDetail",
+    "type": "object",
+    "title": "Contact detail"
+  },
+  {
+    "fields": [
+      {
+        "name": "id",
+        "type": "string",
+        "title": "Internal ID"
+      },
+      {
+        "name": "label",
+        "type": "string"
+      }
+    ],
+    "name": "siteContactType",
+    "type": "object",
+    "title": "Contact form option"
+  },
+  {
+    "fields": [
+      {
+        "name": "headingBefore",
+        "type": "string",
+        "title": "Heading before emphasis"
+      },
+      {
+        "name": "headingEmphasis",
+        "type": "string",
+        "title": "Emphasized heading"
+      },
+      {
+        "of": [
+          {
+            "type": "siteContactDetail",
+            "title": "Contact detail"
+          }
+        ],
+        "name": "details",
+        "type": "array",
+        "title": "Contact details"
+      },
+      {
+        "of": [
+          {
+            "type": "string"
+          }
+        ],
+        "name": "socials",
+        "type": "array",
+        "title": "Social networks"
+      },
+      {
+        "name": "name",
+        "type": "string",
+        "title": "Name field label"
+      },
+      {
+        "name": "email",
+        "type": "string",
+        "title": "Email field label"
+      },
+      {
+        "name": "lookingFor",
+        "type": "string",
+        "title": "Service options label"
+      },
+      {
+        "of": [
+          {
+            "type": "siteContactType",
+            "title": "Contact form option"
+          }
+        ],
+        "name": "types",
+        "type": "array",
+        "title": "Service options"
+      },
+      {
+        "name": "eventDate",
+        "type": "string",
+        "title": "Event date field label"
+      },
+      {
+        "name": "guests",
+        "type": "string",
+        "title": "Guest count field label"
+      },
+      {
+        "of": [
+          {
+            "type": "string"
+          }
+        ],
+        "name": "guestOptions",
+        "type": "array",
+        "title": "Guest count options"
+      },
+      {
+        "name": "message",
+        "type": "string",
+        "title": "Message field label"
+      },
+      {
+        "name": "submit",
+        "type": "string",
+        "title": "Submit button"
+      },
+      {
+        "name": "sending",
+        "type": "string",
+        "title": "Sending status"
+      },
+      {
+        "name": "success",
+        "type": "string",
+        "title": "Success message"
+      },
+      {
+        "name": "error",
+        "type": "string",
+        "title": "Error message"
+      }
+    ],
+    "name": "siteContact",
+    "type": "object",
+    "title": "Contact"
+  },
+  {
+    "fields": [
+      {
+        "name": "tagline",
+        "type": "string"
+      },
+      {
+        "name": "privacy",
+        "type": "string",
+        "title": "Privacy link"
+      },
+      {
+        "name": "terms",
+        "type": "string",
+        "title": "Terms link"
+      }
+    ],
+    "name": "siteFooter",
+    "type": "object",
+    "title": "Footer"
+  }
+]

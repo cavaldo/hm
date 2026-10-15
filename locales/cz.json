@@ -25,8 +25,7 @@
     "contact": "Ozvěte se",
     "openMenu": "Otevřít menu",
     "closeMenu": "Zavřít menu",
-    "language": "Jazyk",
-    "palette": "Barevná paleta"
+    "language": "Jazyk"
   },
   "hero": {
     "eyebrow": "Výjimečné jídlo, nezapomenutelné akce",
@@ -41,7 +40,7 @@
     "stampSmall": "Audit · plán · realizace"
   },
   "about": {
-    "photoAlt": "Ilustrační portrét profesionálky ve světlé kanceláři",
+    "photoAlt": "Portrét profesionálky",
     "heading": "Klidná ruka za každým skvělým stolem.",
     "body": "Jsem ten, kdo zkontroluje kuchyni, připraví tým a zůstane až do poslední skleničky, abyste si vy mohli užít každý okamžik. Na jedné straně standardy pohostinství, na druhé umění tvořit akce.",
     "stats": [

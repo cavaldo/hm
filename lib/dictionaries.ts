@@ -1,5 +1,6 @@
 import "server-only";
 
+import { sanityClient } from "@/lib/sanity";
 import en from "@/locales/en.json";
 
 export const locales = ["en", "cs"] as const;
@@ -17,5 +18,20 @@ export function isLocale(value: string): value is Locale {
 }
 
 export function getDictionary(locale: Locale) {
-  return dictionaries[locale]();
+  if (!sanityClient) return dictionaries[locale]();
+
+  return sanityClient
+    .fetch<Dictionary | null>(
+      '*[_type == "siteContent" && locale == $locale][0].content',
+      { locale },
+      { next: { revalidate: 60 } },
+    )
+    .then((content) => {
+      if (!content) {
+        throw new Error(
+          `Sanity content for "${locale}" is missing. Run "npm run sanity:import" to import the starter content.`,
+        );
+      }
+      return content;
+    });
 }

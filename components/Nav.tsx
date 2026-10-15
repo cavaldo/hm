@@ -4,20 +4,6 @@ import Link from "next/link";
 import { useEffect, useRef, useState } from "react";
 import type { Dictionary, Locale } from "@/lib/dictionaries";
 
-const palettes = [
-  { value: "original", label: "Original" },
-  { value: "amber-oxblood", label: "Amber" },
-  { value: "navy-gold", label: "Navy" },
-  { value: "slate-teal", label: "Slate teal" },
-  { value: "monochrome", label: "Monochrome" },
-  { value: "sunset-amber", label: "Sunset amber" },
-  { value: "honey-wheat", label: "Honey wheat" },
-  { value: "sage-honey", label: "Sage honey" },
-] as const;
-
-type Palette = (typeof palettes)[number]["value"];
-const paletteStorageKey = "dk-site-color-palette";
-
 export default function Nav({
   locale,
   text,
@@ -26,63 +12,8 @@ export default function Nav({
   text: Dictionary["nav"];
 }) {
   const [open, setOpen] = useState(false);
-  const [palette, setPalette] = useState<Palette>("original");
   const menuRef = useRef<HTMLDivElement>(null);
   const menuButtonRef = useRef<HTMLButtonElement>(null);
-
-  useEffect(() => {
-    try {
-      const savedPalette = window.localStorage.getItem(paletteStorageKey);
-      const migratedPalette =
-        savedPalette === "berry-rose"
-          ? "slate-teal"
-          : savedPalette === "olive-burgundy" ||
-              savedPalette === "olive-harvest"
-            ? "sage-honey"
-          : savedPalette === "simple"
-            ? "original"
-            : savedPalette;
-      const selectedPalette = palettes.find(
-        ({ value }) => value === migratedPalette,
-      );
-      if (selectedPalette) {
-        setPalette(selectedPalette.value);
-        if (selectedPalette.value !== "original") {
-          document.documentElement.dataset.palette = selectedPalette.value;
-        }
-        if (migratedPalette !== savedPalette) {
-          if (selectedPalette.value === "original") {
-            window.localStorage.removeItem(paletteStorageKey);
-          } else {
-            window.localStorage.setItem(
-              paletteStorageKey,
-              selectedPalette.value,
-            );
-          }
-        }
-      }
-    } catch (error) {
-      console.error("Unable to load the saved color palette:", error);
-    }
-  }, []);
-
-  function changePalette(value: string) {
-    const selectedPalette = palettes.find((item) => item.value === value);
-    if (!selectedPalette) return;
-
-    setPalette(selectedPalette.value);
-    if (selectedPalette.value === "original") {
-      delete document.documentElement.dataset.palette;
-    } else {
-      document.documentElement.dataset.palette = selectedPalette.value;
-    }
-
-    try {
-      window.localStorage.setItem(paletteStorageKey, selectedPalette.value);
-    } catch (error) {
-      console.error("Unable to save the selected color palette:", error);
-    }
-  }
 
   useEffect(() => {
     if (!open) return;
@@ -140,18 +71,6 @@ export default function Nav({
               </Link>
             ))}
           </div>
-          <select
-            aria-label={text.palette}
-            value={palette}
-            onChange={(event) => changePalette(event.target.value)}
-            className="h-9 max-w-[112px] rounded-full border border-espresso/25 bg-ivory px-2 text-xs text-espresso outline-none transition hover:border-cognac focus-visible:ring-1 focus-visible:ring-antique-gold"
-          >
-            {palettes.map(({ value, label }) => (
-              <option key={value} value={value}>
-                {label}
-              </option>
-            ))}
-          </select>
           <button
             ref={menuButtonRef}
             type="button"
