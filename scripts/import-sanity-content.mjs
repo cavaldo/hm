@@ -2,13 +2,13 @@ import { readFile } from "node:fs/promises";
 import { resolve } from "node:path";
 import { createClient } from "@sanity/client";
 
-const projectId = process.env.NEXT_PUBLIC_SANITY_PROJECT_ID;
-const dataset = process.env.NEXT_PUBLIC_SANITY_DATASET || "production";
+const projectId = process.env.SANITY_PROJECT_ID;
+const dataset = process.env.SANITY_DATASET || "production";
 const token = process.env.SANITY_API_WRITE_TOKEN;
 
 if (!projectId || !token) {
   throw new Error(
-    "Set NEXT_PUBLIC_SANITY_PROJECT_ID and SANITY_API_WRITE_TOKEN in .env.local before importing content.",
+    "Set SANITY_PROJECT_ID and SANITY_API_WRITE_TOKEN in .env.local before importing content.",
   );
 }
 
